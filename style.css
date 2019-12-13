@@ -1,0 +1,13 @@
+body{
+  position: absolute;
+  left: 30px;
+}
+.Title {
+}
+.GameBtn{
+  font-size: 25px;
+  color: blue;
+  background-color: none;
+  border: 0px hidden;
+  line-height: 30px
+}
