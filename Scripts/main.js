@@ -62,16 +62,29 @@
       // Doc Title
       window.setInterval(function(){
         document.title = CookieString + " Cookies, Cookie Clicker";
-      },1000)
+      },500)
       // Calculates and Gives Cookies Per Second
       //Check if Page Active
       window.setInterval(function(){
+       if (document.hidden) {
+   	     return
+	   }
        CPS = amount[0] * ACMOD + amount[1] * GMMOD + amount[2] * CFMOD;
-       var CPmS = CPS*0.1
+       var CPmS = CPS*0.05
        Cookies = Cookies + CPmS;
        totalCookies = totalCookies + CPmS;
        document.getElementById('CPS').innerHTML = CPS;
-      }, 100);
+      }, 50);
+      window.setInterval(function(){
+       if (!document.hidden) {
+   	    return
+	   }
+       CPS = amount[0] * ACMOD + amount[1] * GMMOD + amount[2] * CFMOD;
+       var CPmS = CPS
+       Cookies = Cookies + CPmS;
+       totalCookies = totalCookies + CPmS;
+       document.getElementById('CPS').innerHTML = CPS;
+      }, 1000);
       // Check for the various File API support.
       if (window.File && window.FileReader && window.FileList && window.Blob) {
         console.log("Success! All the File APIs are supported.");
