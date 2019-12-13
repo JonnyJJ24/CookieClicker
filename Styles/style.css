@@ -1,13 +1,336 @@
 body{
+  background-color: rgba(35,35,35,0.8);
+}
+html {
+  height: 100%;
+}
+.Collum {
+  position: fixed;
+  background: black;
+  width: 0.5%;
+  top: 0px;
+  bottom: 0px;
+}
+.Collum.LOC {
+  left: 0px;
+}
+.Collum.ROC {
+  left: 35.5%;
+}
+.Collum.LOCN {
+  left: 69%;
+}
+.Collum.ROS {
+  left: 99.5%;
+  line-height: 5px;
+}
+
+.centerSlim{
+  float: left;
+  height: 0%;
+  width: 0%;
+  opacity:0;
+  border-left: 4px solid;
+  border-right: 4px solid;
+}
+.center{
+  float: left;
+  width: 33%;
+  position: fixed;
+  height: auto;
+  overflow: auto;
+  left: 36%;
+  top: 0px;
+  bottom: 0px;
+  border-top: 4px none;
+  border-bottom: 4px solid;
+  border-color: black;
+  line-height: 5px;
+}
+#CenterHeader{
+  position: relative;
+  height: 80px;
+  width: 100%;
+  background-color: rgba(50,50,50,1);
+  border-top: 4px solid;
+  border-bottom: 4px solid;
+  border-color: black;
+  top: 0px;
+}
+
+.LWC {
+  position: fixed;
+  float: left;
+  width: 35%;
+  align-content: center;
+  /*border: 5px solid;*/
+  text-align: center;
+  color: white;
+  border-right: 1% solid;
+  margin-right: 25 px;
+  border-left: 1% solid;
+  border-top: 4px solid;
+  border-bottom: 4px solid;
+  border-color: black;
+  overflow: auto;
+  bottom: 0px;
+  top: 0px;
+  left: 0.5%;
+}
+.cookie {
+  width: 75%;
+  border-radius: 37.5%;
+}
+.cookie:hover {
+  width: 76%;
+}
+.cookie:active {
+  width: 72%;
+}
+.cookie:focus {
+  outline: none;
+}
+.ShopH {
+  position: fixed;
+  border-top: 4px solid;
+  width: 30%;
+  height: auto;
+  text-align: Center;
+  float: left;
+  border-bottom: 4px solid;
+  border-color: black;
+  left: 69.5%;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.Shop {
+  width: parent;
+  text-align: Center;
+  float: parent;
+  border-top: 4px solid;
+  border-color: black;
+  color: white;
+  line-height: 5px;
+}
+.SItem {
+  width: 100%;
+  height: 100px;
+  color: white;
+  /*border: 4px solid;*/
+  border-color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 0px;
+  padding-bottom: 15px;
+  line-height: 10px;
+  background-color: rgba(50,50,50,1);
+}
+.ShopGroupingTitle {
+  background-color: rgba(50,50,50,1);
+  width: 100%;
+  height: 16px;
+  font-size: 14px;
+  color: white;
+  border-color: black;
+  text-align: left;
+  padding: 0px;
+  line-height: 14px;
+  border-right: 4px solid;
+}
+.SItem:active {
+  border-color: whitesmoke;
+}
+.SItem:focus {
+  outline: none;
+}
+.SImage {
+  /*width: 10%;*/
+  height:30px;
+  float: left;
+  padding-top: 5px;
+  padding-right:10px;
+  z-index:0;
+}
+#ItemUpgrades {
+  height: auto;
+  width: 100%;
+  border: 2px solid;
+  border-color: black;
+}
+.UpgradeIcon {
+  height: 50px;
+  width: 50px;
+  border: 2px solid;
+  border-color: black;
+  background-color: rgba(50,50,50,1);
+}
+.reset {
+  border-color: darkred;
+  background-color: red;
+  width: 30%;height: 50%;
   position: absolute;
-  left: 30px;
+  top: 0px;
+  left: 0px;
+  font-size: 18px;
 }
-.Title {
+.reset:focus {
+  outline: none;
 }
-.GameBtn{
-  font-size: 25px;
-  color: blue;
-  background-color: none;
-  border: 0px hidden;
-  line-height: 30px
+#OpenOptions {
+  background-color: white;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 30%;
+  height: 50%;
+  font-size: 18px;
+}
+#OpenOptions:focus {
+  outline: none;
+}
+#options {
+  position: absolute;
+  opacity: 0;
+  background-color: rgba(50,50,50,1);
+  color: white;
+  top: 88px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 4;
+}
+.GenSFile {
+  height: 30px;
+  width: auto;
+  position: static;
+  padding-top: 5px;
+  justify-content: center;
+}
+#SavFileUpload {
+  height: 30px;
+  width: auto;
+  position: static;
+  padding-top: 5px;
+  justify-content: center;
+}
+#infoBtn {
+  background-color: white;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 30%;
+  height: 50%;
+  font-size: 18px;
+}
+#infoBtn:focus {
+  outline: none;
+}
+#info {
+  position: absolute;
+  opacity: 0;
+  background-color: rgba(50,50,50,1);
+  color: white;
+  top: 88px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 4;
+}
+#ModeBuy {
+  position: relative;
+  top: 22px;
+  left: -50px;
+  width: 40px;
+  background-color: rgba(0,0,0,0);
+  border-color: rgba(0,0,0,1);
+  color: white;
+}
+#ModeBuy:focus {
+  outline: none;
+}
+#ModeSell {
+  position: relative;
+  top: 22px;
+  left: -40px;
+  width: 40px;
+  background-color: rgba(0,0,0,0);
+  border-color: rgba(0,0,0,1);
+  color: white;
+}
+#ModeSell:focus {
+  outline: none;
+}
+#Blank {
+  position: absolute;
+  opacity: 0;
+  background-color: rgba(50,50,50,0);
+  color: white;
+  top: 88px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 5;
+}
+
+/*@media screen and (max-width: 1000px) {
+	.LWC {
+      width: 36%;
+    }
+}*/
+
+@media screen and (max-width: 800px) {
+	.SImage {
+      width: 5%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+  .LWC{
+    position: static;
+    float: left;
+    width: 99%;
+    line-height: 5px;
+    border: 2px solid;
+    height: 350px;
+    border-color: black;
+    z-index: 3;
+    overflow-y: hidden;
+  }
+  .ShopH {
+    position: static;
+    float: left;
+    width: 99%;
+    height: 100%;
+    left: 0px;
+    border: 2px solid;
+  }
+  .center, .Collum.LOC, .Collum.ROC, .Collum.LOCN {
+    width: 0%;
+    opacity: 0;
+  }
+  .centerSlim {
+    position:static;
+    opacity: 1;
+    width: 99%;
+   	height: 100%;
+    float: left;
+    border: 2px solid;
+  }
+  .CenterHeader{
+    position: static;
+    float: left;
+    width: 100%;
+  }
+  .cookie {
+    width: 45%;
+  }
+  .cookie:hover {
+  	width: 46%;
+  }
+  .cookie:active {
+  	width: 43%;
+  }
 }
