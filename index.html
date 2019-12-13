@@ -1,14 +1,98 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-     <link href="Styles/style.css" rel="stylesheet"/>
-     <script src="Scripts/main.js" type="text/javascript"></script>
-    <title>JonnyJJ24 Home</title>
+    <link href="Styles/style.css" rel="stylesheet"/>
+    <script src="Scripts/main.js"></script>
+    <title>0 Cookies, Cookie Clicker</title>
 </head>
-<body>
-<h1>JonnyJJ24.github.io</h1><br>
-<p>My HomePage<p><br>
-<input class=GameBtn type="button" value="Snake" onclick="GTSnake()"> Basically Done<br>
-<input class=GameBtn type="button" value="Cookie Clicker" onclick="GTCC()"> (WIP) My Demake of Cookie Clicker<br>
+<body onload="onload()">
+<div class=BorderBox>
+  <div class=centerSlim>
+    <div id=CenterHeader>
+      <p>
+	     <input class="reset" type="button" value="Reset" onclick="reset()">
+         <input id=OpenOptions type="button" value="Options" onclick="OpenOptions()">
+	  </p>
+      <div id=optionsDense>
+      <p class=GenSFileDesc style="height: 0px;width: 100%;"></p>
+      <p><input type="button" id="GenSFile" value="Generate Save File" onclick="GenSavFile()"></p>
+      <p><input type="file" id="SavFileUpload">
+      <span><input type="button" value="GO!" onclick="parseSave();"></span></p>
+    </div>
+    </div>
+  </div>
+  <div class="Collum LOC"></div>
+  <div class="LWC">
+    	<h2 style="line-height: 2px;">
+		  Cookies: <h1 id=ACookies></h1>
+    	  (CPS: <span id="CPS"></span>)
+        </h2>
+	<p>
+      <input class=cookie type="image" src="img/cookie-vector-11657497.svg" onclick="ACC();UC()">  
+	</p>
+    <a class=BottomAnchor></a>
+  </div>
+  <div class="Collum ROC"></div>
+  <div class=center>
+    <div id=CenterHeader>
+      <p>
+	     <input class="reset" type="button" value="Reset" onclick="reset()">
+         <input id=OpenOptions type="button" value="Options" onclick="OpenOptions()">
+         <input id=infoBtn type="button" value="Info" onclick="OpenInfo()">
+	  </p>
+    </div>
+    <div id=options>
+      <p id=GenSFileDesc style="height: 0px;width: 100%;"></p>
+      <p><input type="button" class="GenSFile" value="Generate Save File" onclick="GenSavFile()"></p>
+      <p><input type="file" id=SFUL>
+      <span><input type="button" value="GO!" onclick="parseSave();"></span></p>
+    </div>
+    <div id=info>
+      <p style="line-height: 18px">
+      Thank You For Using My Crappy "Cookie Clicker" Remake!
+      </p>
+    </div>
+    <div id=Blank>
+    </div>
+  </div>
+  <div class="Collum LOCN"></div>
+  <div class=ShopH>
+    <h1 style="color: white"> Shop</h1>
+    <div id=ItemUpgrades>
+      <div class="ShopGroupingTitle"> Upgrades</div>
+    </div>
+  	<div class=Shop>
+      <div class="ShopGroupingTitle" style="border-left: 2px solid;border-color: black;height: 50px;">
+        Buildings
+        <input id=ModeBuy type="button" value="Buy" onclick="SMode = 'buy'">
+        <input id=ModeSell type="button" value="Sell" onclick="SMode = 'sell'">
+      </div>
+			<button class=SItem type="button" value='Auto Clickers' onclick="BAC();">
+              <img class=SImage src=img/AutoClickerImg.svg>
+              <h2>
+              Auto Clicker
+              </h2><span style="position: absolute;left:20%;"><span>Cost: </span>
+          	<span id=ACcost></span></span><span style="float:right">
+              <span>Amount: </span><span id=ACamount></span></span></button>
+      
+      <button class=SItem type="button" value='Grandma' onclick="BGM();">
+        <img class=SImage src=img/Cookie_Grandma.svg>
+              <h2>
+              Grandma
+              </h2><span style="position: absolute;left:20%;"><span>Cost: </span>
+          	<span id=GMcost></span></span><span style="float:right">
+              <span>Amount: </span><span id=GMamount></span></span></button>
+      
+      <button class=SItem type="button" value='Cookie Farm' onclick="BCF()">
+        <img class=SImage src=img/01_organic_farming_i8860_20181003_11260.svg>
+              <h2>
+              Cookie Farm
+              </h2><span style="position: absolute;left:20%;"><span>Cost: </span>
+          	<span id=CFcost></span></span><span style="float:right">
+              <span>Amount: </span><span id=CFamount></span></span></button>
+  	</div>
+  </div>
+  <div class="Collum ROS"></div>
+</div>
 </body>
 </html>
