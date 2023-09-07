@@ -148,73 +148,73 @@
           AmountString = AmountString.slice(0,3) + "." + PV + " Million";
         }else if (vaar > 999999999  && vaar < 10000000000){
           AmountString = vaar.toString();
-          PV = parseInt(AmountString.slice(4,7)) / 1000;
+          PV = parseInt(AmountString.slice(1,4)) / 1000;
           PV = PV.toString();
           PV = PV.slice(2)
           AmountString = AmountString.slice(0,1) + "." + PV + " Trillion";
         }else if (vaar > 9999999999  && vaar < 100000000000){
           AmountString = vaar.toString();
-          PV = parseInt(AmountString.slice(5,8)) / 1000;
+          PV = parseInt(AmountString.slice(2,5)) / 1000;
           PV = PV.toString();
           PV = PV.slice(2)
           AmountString = AmountString.slice(0,2) + "." + PV + " Trillion";
         }else if (vaar > 99999999999  && vaar < 1000000000000){
           AmountString = vaar.toString();
-          PV = parseInt(AmountString.slice(6,9)) / 1000;
+          PV = parseInt(AmountString.slice(3,6)) / 1000;
           PV = PV.toString();
           PV = PV.slice(2)
           AmountString = AmountString.slice(0,3) + "." + PV + " Trillion";
         }else if (vaar > 999999999999  && vaar < 10000000000000){
           AmountString = vaar.toString();
-          PV = parseInt(AmountString.slice(8,11)) / 1000;
+          PV = parseInt(AmountString.slice(1,4)) / 1000;
           PV = PV.toString();
           PV = PV.slice(2)
           AmountString = AmountString.slice(0,1) + "." + PV + " Quadrillion";
         }else if (vaar > 9999999999999  && vaar < 100000000000000){
           AmountString = vaar.toString();
-          PV = parseInt(AmountString.slice(9,12)) / 1000;
+          PV = parseInt(AmountString.slice(2,5)) / 1000;
           PV = PV.toString();
           PV = PV.slice(2)
           AmountString = AmountString.slice(0,2) + "." + PV + " Quadrillion";
         }else if (vaar > 99999999999999  && vaar < 1000000000000000){
           AmountString = vaar.toString();
-          PV = parseInt(AmountString.slice(10,13)) / 1000;
+          PV = parseInt(AmountString.slice(3,6)) / 1000;
           PV = PV.toString();
           PV = PV.slice(2)
           AmountString = AmountString.slice(0,3) + "." + PV + " Quadrillion";
         }else if (vaar > 999999999999999  && vaar < 10000000000000000){
           AmountString = vaar.toString();
-          PV = parseInt(AmountString.slice(11,14)) / 1000;
+          PV = parseInt(AmountString.slice(1,4)) / 1000;
           PV = PV.toString();
           PV = PV.slice(2)
           AmountString = AmountString.slice(0,1) + "." + PV + " Quintillion";
         }else if (vaar > 9999999999999999  && vaar < 100000000000000000){
           AmountString = vaar.toString();
-          PV = parseInt(AmountString.slice(12,15)) / 1000;
+          PV = parseInt(AmountString.slice(2,5)) / 1000;
           PV = PV.toString();
           PV = PV.slice(2)
           AmountString = AmountString.slice(0,2) + "." + PV + " Quintillion";
         }else if (vaar > 99999999999999999  && vaar < 1000000000000000000){
           AmountString = vaar.toString();
-          PV = parseInt(AmountString.slice(13,16)) / 1000;
+          PV = parseInt(AmountString.slice(3,6)) / 1000;
           PV = PV.toString();
           PV = PV.slice(2)
           AmountString = AmountString.slice(0,3) + "." + PV + " Quintillion";
         }else if (vaar > 99999999999999999  && vaar < 1000000000000000000){
           AmountString = vaar.toString();
-          PV = parseInt(AmountString.slice(14,17)) / 1000;
+          PV = parseInt(AmountString.slice(1,4)) / 1000;
           PV = PV.toString();
           PV = PV.slice(2)
           AmountString = AmountString.slice(0,1) + "." + PV + " Sextillion";
         }else if (vaar > 99999999999999999  && vaar < 1000000000000000000){
           AmountString = vaar.toString();
-          PV = parseInt(AmountString.slice(15,18)) / 1000;
+          PV = parseInt(AmountString.slice(2,5)) / 1000;
           PV = PV.toString();
           PV = PV.slice(2)
           AmountString = AmountString.slice(0,2) + "." + PV + " Sextillion";
         }else if (vaar > 99999999999999999  && vaar < 1000000000000000000){
           AmountString = vaar.toString();
-          PV = parseInt(AmountString.slice(16,19)) / 1000;
+          PV = parseInt(AmountString.slice(3,6)) / 1000;
           PV = PV.toString();
           PV = PV.slice(2)
           AmountString = AmountString.slice(0,3) + "." + PV + " Sextillion";
