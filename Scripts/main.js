@@ -163,7 +163,7 @@
           PV = parseInt(AmountString.slice(6,9)) / 1000;
           PV = PV.toString();
           PV = PV.slice(2)
-          AmountString = AmountString.slice(7,10) + "." + PV + " Trillion";
+          AmountString = AmountString.slice(0,3) + "." + PV + " Trillion";
         }else if (vaar > 999999999999  && vaar < 10000000000000){
           AmountString = vaar.toString();
           PV = parseInt(AmountString.slice(8,11)) / 1000;
